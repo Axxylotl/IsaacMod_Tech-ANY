@@ -1,2 +1,2 @@
-# IsaacMod_Tech-ANY
+# Tech_Infinity
 My first mod for the game TheBindingofIsaac

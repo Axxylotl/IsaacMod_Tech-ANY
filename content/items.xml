@@ -1,0 +1,3 @@
+<items gfxroot="gfx/items/" version="1">
+    <passive id="0" name="Tech Infinity" gfx="tech_infinity.png" description="Infinite Innovation" quality="3"/>
+</items>
