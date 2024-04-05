@@ -5,7 +5,7 @@ local GIVE = "giveitem c"
 local REMOVE = "remove c"
 local lastItem = {}
     local id = 0
-for j=1, 1000 do
+for j=1, 100 do
     lastItem[j] = 0
 end
 
