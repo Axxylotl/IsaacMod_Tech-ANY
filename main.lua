@@ -4,8 +4,8 @@ local TECH_INFINITY_ID = Isaac.GetItemIdByName("Tech Infinity")
 local GIVE = "giveitem c"
 local REMOVE = "remove c"
 local lastItem = {}
-local id = 0
-for j=1, 100 do
+    local id = 0
+for j=1, 1000 do
     lastItem[j] = 0
 end
 
