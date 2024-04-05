@@ -6,7 +6,7 @@
     <description>This mod adds the passive item Tech Infinity, which functions similar to zodiac, but gives you a random tech item each floor instead. My friend made the sprites and artwork for this mod and I programmed the logic. 
 
 This is my first mod so I am open to all feedback ^^.</description>
-    <version>1.1</version>
+    <version>1.2</version>
     <visibility>Public</visibility>
     <tag id="Lua"/>
     <tag id="Items"/>
