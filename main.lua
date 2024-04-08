@@ -4,6 +4,7 @@ local TECH_INFINITY_ID = Isaac.GetItemIdByName("Tech Infinity")
 local GIVE = "giveitem c"
 local REMOVE = "remove c"
 local lastItem = {}
+local haveItem = false
 
 local techItems = {     --array of all the tech items
     CollectibleType.COLLECTIBLE_TECHNOLOGY, 
@@ -46,4 +47,13 @@ function mod:randTech() --main function, which has most of the logic for the ite
     end
 end
 
+function mod:onPickup()
+    local player = Isaac.GetPlayer(0)
+    if player:HasCollectible(TECH_INFINITY_ID) == true and haveItem == false  then --checks if the player has the item and gives a random tech item for each instance of Tech Infinity the player posseses
+        mod:randTech()
+        haveItem = true
+    end
+end
+
 mod:AddCallback(ModCallbacks.MC_POST_NEW_LEVEL, mod.randTech) --the item only does something when the player changes floor (currently missing instance for when player picks up the item)
+mod:AddCallback(ModCallbacks.MC_INPUT_ACTION, mod.onPickup)

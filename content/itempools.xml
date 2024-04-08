@@ -1,5 +1,8 @@
 <ItemPools>
-    <pool Name="treasure">
+    <Pool Name="treasure">
         <Item Name="Tech Infinity" Weight="1" DecreaseBy="1" RemoveOn="0.1"/>
-    </pool>
+    </Pool>
+    <Pool Name="ultraSecret">
+        <Item Name="Tech Infinity" Weight="1" DecreaseBy="0.4" RemoveOn="0.1"/>
+    </Pool>
 </ItemPools>
